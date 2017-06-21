@@ -1,10 +1,12 @@
+https://travis-ci.org/rileyschuit/rpi-docker-sabnzbd.svg?branch=master  
+
 # docker sabnzbd
 This is a Dockerfile to set up "SABnzbd" - (http://sabnzbd.org/)
 Build from docker file
 ```
-git clone https://github.com/timhaak/docker-sabnzbd.git
-cd docker-sabnzbd
-docker build -t sabnzbd .
+git clone https://github.com/rileyschuit/rpi-docker-sabnzbd.git
+cd rpi-docker-sabnzbd
+docker build -t rpi-docker-sabnzbd .
 ```
 
 ```
