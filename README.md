@@ -1,5 +1,5 @@
-https://travis-ci.org/rileyschuit/rpi-docker-sabnzbd.svg?branch=master  
-
+[![Build Status](https://travis-ci.org/rileyschuit/rpi-docker-sabnzbd.svg?branch=master)](https://travis-ci.org/rileyschuit/rpi-docker-sabnzbd)  
+  
 # docker sabnzbd
 This is a Dockerfile to set up "SABnzbd" - (http://sabnzbd.org/)
 Build from docker file
