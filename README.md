@@ -1,14 +1,15 @@
 [![Build Status](https://travis-ci.org/rileyschuit/rpi-docker-sabnzbd.svg?branch=master)](https://travis-ci.org/rileyschuit/rpi-docker-sabnzbd)  
   
-# docker sabnzbd
-This is a Dockerfile to set up "SABnzbd" - (http://sabnzbd.org/)
-Build from docker file
+# Docker sabnzbd to run on a Raspberry Pi
+This is a Dockerfile to set up "SABnzbd" - (http://sabnzbd.org/)  
+### Build from docker file:
 ```
 git clone https://github.com/rileyschuit/rpi-docker-sabnzbd.git
 cd rpi-docker-sabnzbd
 docker build -t rpi-docker-sabnzbd .
 ```
-
+  
+### Pull from docker hub:
 ```
 docker run -d \
   -h *your_host_name* \
