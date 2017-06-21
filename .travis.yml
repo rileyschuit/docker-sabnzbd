@@ -8,7 +8,7 @@ script:
 # build image
 - docker build -t rileyschuit/rpi-docker-sabnzbd .
 # test image
-docker run rileyschuit/rpi-docker-sabnzbd ps -ef | grep SABnzbd.py
+- docker run rileyschuit/rpi-docker-sabnzbd ps -ef | grep SABnzbd.py
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
