@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM hypriot/rpi-alpine:latest
 MAINTAINER Cameron Meindl <cmeindl@gmail.com>
 ARG GITTAG=2.1.0
 ARG PAR2TAG=v0.6.14
