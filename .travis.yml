@@ -7,7 +7,8 @@ script:
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 # build image
 - docker build -t rileyschuit/rpi-docker-sabnzbd .
-# TODO: test image
+# test image
+docker run rileyschuit/rpi-docker-sabnzbd ps -ef | grep SABnzbd.py
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
