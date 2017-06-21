@@ -7,3 +7,11 @@ script:
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 # build image
 - docker build -t rileyschuit/rpi-docker-sabnzbd .
+- >
+  if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
+    #TAG=$(TODO)
+    #docker tag rileyschuit/rpi-docker-sabnzbd rileyschuit/rpi-docker-sabnzbd:$TAG
+    #docker push rileyschuit/rpi-docker-sabnzbdl:$TAG
+    docker push rileyschuit/rpi-docker-sabnzbd
+  fi
