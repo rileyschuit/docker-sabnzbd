@@ -1,7 +1,7 @@
 FROM hypriot/rpi-alpine:latest
 MAINTAINER Cameron Meindl <cmeindl@gmail.com>
-ARG GITTAG=2.1.0
-ARG PAR2TAG=v0.6.14
+ARG GITTAG=master
+ARG PAR2TAG=v0.8.0
 
 RUN buildDeps="gcc g++ git mercurial make automake autoconf python-dev openssl-dev libffi-dev musl-dev" \
   && apk --update add $buildDeps \
